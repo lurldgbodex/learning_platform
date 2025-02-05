@@ -1,0 +1,38 @@
+name: Backend CI
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'server/**'
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'server/**'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout repository
+        uses: actions/checkout@v4
+
+      - name: set up node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '23'
+
+      - name: install dependencies
+        run: npm ci
+
+      - name: lint code
+        run: npm run lint
+
+      - name: run tests
+        run: npm test
+
+      - name: build project
+        run: npm run build
