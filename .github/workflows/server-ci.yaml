@@ -5,12 +5,12 @@ on:
     branches:
       - main
     paths:
-      - 'server/**'
+      - "server/**"
   pull_request:
     branches:
       - main
     paths:
-      - 'server/**'
+      - "server/**"
 
 jobs:
   build:
@@ -23,10 +23,14 @@ jobs:
       - name: set up node
         uses: actions/setup-node@v4
         with:
-          node-version: '23'
+          node-version: "23"
+          cache: "npm"
+          cache-dependency-path: ./server/package-lock.json
 
       - name: install dependencies
-        run: npm ci
+        run: |
+          cd server
+          npm ci
 
       - name: lint code
         run: npm run lint
