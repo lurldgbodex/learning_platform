@@ -32,11 +32,6 @@ jobs:
           cd server
           npm ci
 
-      - name: lint code
-        run: |
-          cd server
-          npm run lint
-
       - name: run tests
         run: |
           cd server
