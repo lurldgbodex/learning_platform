@@ -24,7 +24,7 @@ export class AuthService {
     private jwtService: JwtService,
   ) {}
 
-  async register(registerDto: RegisterDto): Promise<UserDto> {
+  async register(registerDto: RegisterDto): Promise<AuthResponse> {
     const { email, password } = registerDto
 
     const existingUser = await this.userRepository.findOne({ where: { email } })
@@ -41,11 +41,16 @@ export class AuthService {
 
     const savedUser = await this.userRepository.save(user)
 
-    return {
-      id: savedUser.id,
-      email: savedUser.email,
-      role: savedUser.role,
-    }
+    const tokens = await this.generateToken({ 
+      email: savedUser.email, 
+      sub: savedUser.id, 
+      role: savedUser.role 
+    });
+
+    savedUser.refreshToken = tokens.refresh_token;
+
+    await this.userRepository.save(savedUser);
+    return tokens;
   }
 
   async login(loginDto: LoginDto): Promise<AuthResponse> {
