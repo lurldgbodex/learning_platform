@@ -1,13 +1,17 @@
-import { getUserRole } from "../utils/auth-util"
+import LeftNavbar from "../components/LeftNavbar";
+import TopHeader from "../components/TopHeader";
+import "../styles/pages/Dashboard.css";
 
 const dashboard = () => {
-    const role = getUserRole();
     return (
-        <div>
-            <h1>Dashboard</h1>
-            {role === 'admin' && <p>Welcome, Admin!</p>}
-            {role === 'instructor' && <p>Welcome, Instructor</p>}
-            {role === 'student' && <p>Welcome, Student!</p>}
+        <div className="main-layout">
+            <LeftNavbar />
+            <div className="main-content">
+                <TopHeader title="Dashboard" />
+                <div className="content">
+                    <h2>Overview</h2>
+                </div>
+            </div>
         </div>
     )
 }
