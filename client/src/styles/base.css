@@ -1,8 +1,11 @@
 :root {
   --primary-color: #001c27;
+  --sky-blue-color: #2d9cdb;
   --error-color: #dc2626;
   --text-color: #1f2937;
-  --white-color: #fff;
+  --white-color: #ffffff;
+  --purple-color: #bb6bd9;
+  --light-grey-color: #e0e0e0;
 }
 
 * {
@@ -12,7 +15,24 @@
 }
 
 body {
-  font-family: Roboto;
+  font-family: 'Poppins', sans-serif;
   color: var(--text-color);
   line-height: 1.6;
+}
+
+.main-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  padding: 1rem;
+  background: var(--white-color);
+  flex: 1;
 }
