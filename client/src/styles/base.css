@@ -1,6 +1,7 @@
 :root {
   --primary-color: #001c27;
   --sky-blue-color: #2d9cdb;
+  --navy-blue-color: #06455e;
   --error-color: #dc2626;
   --text-color: #1f2937;
   --white-color: #ffffff;
@@ -15,7 +16,7 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Manrope', serif;
   color: var(--text-color);
   line-height: 1.6;
 }
@@ -32,7 +33,8 @@ body {
 }
 
 .content {
+  display: flex;
+  justify-content: space-between;
   padding: 1rem;
-  background: var(--white-color);
-  flex: 1;
+  gap: 2rem;
 }

@@ -1,5 +1,9 @@
-import LeftNavbar from "../components/LeftNavbar";
-import TopHeader from "../components/TopHeader";
+import LeftNavbar from "../components/LeftNavbar/LeftNavbar";
+import OverviewCards from "../components/OverviewCards/OverviewCards";
+import ProgressCircles from "../components/ProgressCircles/ProgressCircles";
+import DashboardEvent from "../components/Events/DashboardEvent";
+import StudyStatistics from "../components/StudyStatistics/StudyStatistics";
+import TopHeader from "../components/TopHeader/TopHeader";
 import "../styles/pages/Dashboard.css";
 
 const dashboard = () => {
@@ -9,9 +13,19 @@ const dashboard = () => {
             <div className="main-content">
                 <TopHeader title="Dashboard" />
                 <div className="content">
-                    <h2>Overview</h2>
+                    <div className='left-side'>
+                        <OverviewCards />
+                        <div className="statistics">
+                            <StudyStatistics />
+                            <ProgressCircles />
+                        </div>
+                    </div>
+                    <div className="">
+                        <DashboardEvent />
+                    </div>
                 </div>
             </div>
+
         </div>
     )
 }
