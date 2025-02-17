@@ -109,7 +109,6 @@
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.25);
     flex-shrink: 0;
     padding: 0 20px;
-    border: 1px solid red;
   }
 
   .titleContainer h2::after {
@@ -117,7 +116,6 @@
     font-size: 16px;
     font-weight: 600;
     color: #828282;
-    border: 1px solid red;
   }
 
   .circularProgressContainer {
