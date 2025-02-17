@@ -21,7 +21,7 @@ body {
   line-height: 1.6;
 }
 
-.main-layout {
+/* .main-layout {
   display: flex;
   min-height: 100vh;
 }
@@ -37,4 +37,4 @@ body {
   justify-content: space-between;
   padding: 1rem;
   gap: 2rem;
-}
+} */

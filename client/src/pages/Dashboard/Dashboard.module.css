@@ -1,0 +1,27 @@
+.mainLayout {
+  display: flex;
+  height: 844px;
+  padding-bottom: 784px;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  /* border: 1px solid red; */
+}
+
+.mainContent {
+  width: 100%;
+}
+
+.statistics {
+  padding: 16px;
+}
+
+@media (min-width: 600px) {
+  .statistics {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    border: 1px solid red;
+  }
+}

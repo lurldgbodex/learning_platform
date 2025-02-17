@@ -7,7 +7,9 @@ const ProgressCircles = () => {
 
     return (
         <div className={styles.progressCircles}>
-            <h2>Progress</h2>
+            <div className={styles.titleContainer}>
+                <h2></h2>
+            </div>
             <div className={styles.circularProgressContainer}>
                 <div className={styles.prototypeProgress}>
                     <CircularProgressbar value={prototypeProgress} strokeWidth={5} />

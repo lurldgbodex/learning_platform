@@ -6,27 +6,43 @@ import { PiLightbulbFilament } from 'react-icons/pi';
 
 const OverviewCards = () => {
     return (
-        <>
-        <h2>Overview</h2>
-        <div className={styles.overviewCards}>
-            <div className={styles.card}>
-                <h3><LuGraduationCap className={styles.icon} />Courses In Progress</h3>
-                <p>3</p>
-            </div>
-            <div className={styles.card}>
-                <h3><PiLightbulbFilament className={styles.icon} />Active Prototypes</h3>
-                <p>7</p>
-            </div>
-            <div className={styles.card}>
-                <h3><FaRegClock className={styles.icon} />Hours Learning</h3>
-                <p>3h 15m</p>
-            </div>
-            <div className={styles.card}>
-                <h3><MdOutlineFlag className={styles.icon}  />Coommunity Score</h3>
-                <p>240</p>
+        <div className={styles.overviews}>
+            <h2 className={styles.title}>Overview</h2>
+            <div className={styles.cardContainer}>
+                <div className={styles.card}>
+                    <div className={styles.cardTitleContainer}>
+                        <LuGraduationCap className={styles.icon} />
+                        <p className={styles.cardTitleFullScreen}>Courses In Progress</p>
+                    </div>
+                    <p className={styles.cardValue}>13</p>
+                    <p className={styles.cardTitle}>Courses In Progress</p>
+                </div>
+                <div className={styles.card}>
+                    <div className={styles.cardTitleContainer}>
+                        <PiLightbulbFilament className={styles.icon} />
+                        <p className={styles.cardTitleFullScreen}>Active Prototypes</p>
+                    </div>               
+                    <p className={styles.cardValue}>07</p>
+                    <p className={styles.cardTitle}>Active Prototypes</p>
+                </div>
+                <div className={styles.card}>
+                    <div className={styles.cardTitleContainer}>
+                        <FaRegClock className={styles.icon} />
+                        <p className={styles.cardTitleFullScreen}>Hours Learning</p>
+                    </div>   
+                    <p className={styles.cardValue}>12h 30m</p>
+                    <p className={styles.cardTitle}>Hours Learning</p>
+                </div>
+                <div className={styles.card}>
+                    <div className={styles.cardTitleContainer}>
+                        <MdOutlineFlag className={styles.icon}  />
+                        <p className={styles.cardTitleFullScreen}>Coommunity Score</p>
+                    </div>   
+                    <p className={styles.cardValue}>420</p>
+                    <p className={styles.cardTitle}>Coommunity Score</p>
+                </div>
             </div>
         </div>
-        </>
     )
 }
 
