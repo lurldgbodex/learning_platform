@@ -43,10 +43,14 @@
 
 .prototypeProgress :global(.CircularProgressbar-path) {
   stroke: var(--sky-blue-color) !important;
+  stroke-linecap: round;
+  stroke-width: 3.8;
 }
 
 .courseProgress :global(.CircularProgressbar-path) {
   stroke: var(--navy-blue-color) !important;
+  stroke-linecap: round;
+  stroke-width: 4;
 }
 
 .prototypeProgress :global(.CircularProgressbar-trail) {

@@ -1,3 +1,6 @@
+import Discussion from "../../components/Discussion/Discussion";
+import LiveEvent from "../../components/Events/LiveEvent";
+import MyCourses from "../../components/MyCourses/MyCourses";
 import OverviewCards from "../../components/OverviewCards/OverviewCards";
 import ProgressCircles from "../../components/ProgressCircles/ProgressCircles";
 import StudyStatistics from "../../components/StudyStatistics/StudyStatistics";
@@ -16,6 +19,9 @@ const dashboard = () => {
                         <StudyStatistics />
                         <ProgressCircles />
                     </div>
+                    <MyCourses />
+                    <Discussion />
+                    <LiveEvent />
                 </div>
             </div>
         </div>
