@@ -1,7 +1,6 @@
 .mainLayout {
   display: flex;
-  height: 844px;
-  padding-bottom: 784px;
+  height: auto;
   flex-direction: column;
   align-items: center;
   flex-shrink: 0;
@@ -16,10 +15,36 @@
 }
 
 @media (min-width: 600px) {
+  .mainLayout {
+    height: 100%;
+    flex-direction: row;
+  }
+
+  .navbar {
+    align-self: stretch;
+  }
+
   .statistics {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 30px;
+  }
+
+  .contents {
+    display: flex;
+    gap: 20px;
+  }
+
+  .leftContent {
+    flex-grow: 1;
+    padding: 10px;
+  }
+
+  .rightContent {
+    flex-grow: 0;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
   }
 }

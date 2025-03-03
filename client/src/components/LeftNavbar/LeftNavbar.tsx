@@ -1,12 +1,14 @@
 import { useLocation } from "react-router-dom";
-import { LuGraduationCap, LuLayoutDashboard, LuLogOut } from "react-icons/lu";
-import { MdOutlineFaceUnlock, MdOutlineMessage } from "react-icons/md";
-import { CiStreamOn } from "react-icons/ci";
-import { HiOutlineLightBulb } from "react-icons/hi2";
+import { LuLayoutDashboard, LuLogOut } from "react-icons/lu";
+import { MdOutlineFaceUnlock } from "react-icons/md";
 import { useState } from "react";
 import { CgProfile } from "react-icons/cg";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import logo from '../../assets/logo.jpeg';
+import course from '../../assets/course.svg';
+import prototypeIcon from '../../assets/prototype.svg';
+import liveIcon from '../../assets/nav-live.svg';
+import discussionIcon from '../../assets/discussion.svg';
 import styles from './LeftNavbar.module.css';
 
 const LeftNavbar = () => {
@@ -21,15 +23,25 @@ const LeftNavbar = () => {
         <nav className={styles["navbar"]}>
             <div className={`${styles["nav-links"]} ${styles.dashboard}`}>
                 <img src={logo} alt="Logo" />
-                <a href='/dashboard' className={`${styles['nav-items']} ${location.pathname === "/dashboard" ? styles["active"] : ""}`}><LuLayoutDashboard /></a>
-                <div className={styles["nav-links"]}>
-                  <a href='/courses' className={`${styles['nav-items']} ${location.pathname === "/courses" ? styles["active"] : ""}`}><LuGraduationCap /></a>
-                  <a href='/prototypes' className={`${styles['nav-items']} ${location.pathname === "/prototypes" ? styles["active"] : ""}`}><HiOutlineLightBulb style={{ strokeWidth: "2" }} /></a>
-                  <a href='/discussions' className={`${styles['nav-items']} ${location.pathname === "/discussions" ? styles["active"] : ""}`}><MdOutlineMessage /></a>
-                  <a href='/live-lessions' className={`${styles['nav-items']} ${location.pathname === "/live-lessons" ? styles["active"] : ""}`}><CiStreamOn style={{ strokeWidth: "1.5" }} /></a>
+                <a href='/dashboard' className={`${styles['nav-items']} ${styles.dashboard} ${location.pathname === "/dashboard" ? styles["active"] : ""}`}>
+                    <LuLayoutDashboard />
+                </a>
+                <div className={ `${styles["nav-links"]} ${styles.iconContainer} `}>
+                  <a href='/courses' className={`${styles['nav-items']} ${location.pathname === "/courses" ? styles["active"] : ""}`}>
+                    <img src={course} className={styles.navIcon} alt="course icon" />
+                  </a>
+                  <a href='/prototypes' className={`${styles['nav-items']} ${location.pathname === "/prototypes" ? styles["active"] : ""}`}>
+                    <img src={prototypeIcon} className={styles.navIcon} alt="prototyp icon" />
+                  </a>
+                  <a href='/discussions' className={`${styles['nav-items']} ${location.pathname === "/discussions" ? styles["active"] : ""}`}>
+                  <img src={discussionIcon} className={styles.navIcon} alt="live Icon" />
+                  </a>
+                  <a href='/live-lessions' className={`${styles['nav-items']} ${location.pathname === "/live-lessons" ? styles["active"] : ""}`}>
+                    <img src={liveIcon} className={styles.navIcon} alt="live Icon" />
+                  </a>
                 </div>
             </div>
-            <div className={styles["nav-profile"]} onClick={toggleMenu}>
+            <div className={styles.profileCard} onClick={toggleMenu}>
                 <MdOutlineFaceUnlock />
                 {isMenuOpen && (
                     <ul className={styles["dropdown-menu"]}>

@@ -1,5 +1,6 @@
 import Discussion from "../../components/Discussion/Discussion";
 import LiveEvent from "../../components/Events/LiveEvent";
+import LeftNavbar from "../../components/LeftNavbar/LeftNavbar";
 import MyCourses from "../../components/MyCourses/MyCourses";
 import OverviewCards from "../../components/OverviewCards/OverviewCards";
 import ProgressCircles from "../../components/ProgressCircles/ProgressCircles";
@@ -10,18 +11,24 @@ import styles from "../Dashboard/Dashboard.module.css";
 const dashboard = () => {
     return (
         <div className={styles.mainLayout}>
-            {/* <LeftNavbar /> */}
+            <div className={styles.navbar}>
+                <LeftNavbar />
+            </div>
             <div className={styles.mainContent}>
                 <TopHeader title='Dashboard' />
                 <div className={styles.contents}>
-                    <OverviewCards />
-                    <div className={styles.statistics}>
-                        <StudyStatistics />
-                        <ProgressCircles />
+                    <div className={styles.leftContent}>
+                        <OverviewCards />
+                        <div className={styles.statistics}>
+                            <StudyStatistics />
+                            <ProgressCircles />
+                        </div>
+                        <MyCourses />
                     </div>
-                    <MyCourses />
-                    <Discussion />
-                    <LiveEvent />
+                    <div className={styles.rightContent}>
+                        <Discussion />
+                        <LiveEvent />
+                    </div>
                 </div>
             </div>
         </div>
