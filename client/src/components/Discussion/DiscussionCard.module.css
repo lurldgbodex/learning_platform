@@ -1,9 +1,11 @@
 .card {
   display: flex;
   height: 82px;
+  max-width: 372px;
   border-left: 5px solid #4d9cdb;
   padding-left: 16px;
   gap: 10px;
+  flex-shrink: 0;
 }
 
 .avatar {
