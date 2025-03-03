@@ -40,6 +40,9 @@
   .topHeader {
     box-shadow: none;
   }
+  .topHeader h1 {
+    font-size: 32px;
+  }
   .disable {
     display: flex;
   }
@@ -71,5 +74,9 @@
 
   .icons {
     gap: 2rem;
+  }
+
+  .menuIcon {
+    display: none;
   }
 }
