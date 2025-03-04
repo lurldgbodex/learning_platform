@@ -1,8 +1,8 @@
-import { LuGraduationCap } from 'react-icons/lu';
 import styles from './OverviewCards.module.css';
-import { FaRegClock } from 'react-icons/fa6';
-import { MdOutlineFlag } from 'react-icons/md';
-import { PiLightbulbFilament } from 'react-icons/pi';
+import courseIcon from '../../assets/course.svg';
+import prototype from '../../assets/prototype.svg';
+import clock from '../../assets/clock.svg';
+import flag from '../../assets/flag.svg';
 
 const OverviewCards = () => {
     return (
@@ -11,7 +11,7 @@ const OverviewCards = () => {
             <div className={styles.cardContainer}>
                 <div className={styles.card}>
                     <div className={styles.cardTitleContainer}>
-                        <LuGraduationCap className={styles.icon} />
+                        <img src={courseIcon} alt="icon" className={styles.icon} />
                         <p className={styles.cardTitleFullScreen}>Courses In Progress</p>
                     </div>
                     <p className={styles.cardValue}>13</p>
@@ -19,7 +19,7 @@ const OverviewCards = () => {
                 </div>
                 <div className={styles.card}>
                     <div className={styles.cardTitleContainer}>
-                        <PiLightbulbFilament className={styles.icon} />
+                        <img src={prototype} alt="icon" className={styles.icon} />
                         <p className={styles.cardTitleFullScreen}>Active Prototypes</p>
                     </div>               
                     <p className={styles.cardValue}>07</p>
@@ -27,15 +27,15 @@ const OverviewCards = () => {
                 </div>
                 <div className={styles.card}>
                     <div className={styles.cardTitleContainer}>
-                        <FaRegClock className={styles.icon} />
-                        <p className={styles.cardTitleFullScreen}>Hours Learning</p>
+                        <img src={clock} alt="icon" className={styles.icon} />
+                    <p className={styles.cardTitleFullScreen}>Hours Learning</p>
                     </div>   
                     <p className={styles.cardValue}>12h 30m</p>
                     <p className={styles.cardTitle}>Hours Learning</p>
                 </div>
                 <div className={styles.card}>
                     <div className={styles.cardTitleContainer}>
-                        <MdOutlineFlag className={styles.icon}  />
+                        <img src={flag} alt="icon" className={styles.icon} />
                         <p className={styles.cardTitleFullScreen}>Coommunity Score</p>
                     </div>   
                     <p className={styles.cardValue}>420</p>

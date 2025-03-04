@@ -48,9 +48,8 @@
 .icon {
   width: 19px;
   height: 19px;
-  padding: 4px;
   border-radius: 1000px;
-  background: rgba(47, 128, 237, 0.15);
+  background: #2d9cdb;
 }
 
 @media (min-width: 600px) {
@@ -59,18 +58,26 @@
     font-size: 20px;
     font-weight: 500;
     color: #333;
+    align-self: flex-start;
+  }
+
+  .overviews {
+    padding: 8px;
   }
 
   .cardContainer {
     display: flex;
     justify-content: space-between;
     align-self: stretch;
+    gap: 25px;
   }
 
   .card {
-    margin: 0;
     justify-content: space-between;
-    padding: 8px 16px;
+    gap: 10px;
+    width: 183px;
+    height: 100px;
+    align-items: flex-start;
   }
 
   .cardTitleContainer {
@@ -90,9 +97,6 @@
   .icon {
     width: 16px;
     height: 16px;
-    background: #2d9cdb;
-    color: var(--white-color);
-    stroke-width: 2;
     border-radius: 4px;
   }
 }

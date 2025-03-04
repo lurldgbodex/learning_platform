@@ -25,6 +25,7 @@
   .title {
     font-weight: 600;
     font-size: 1rem;
+    text-transform: uppercase;
     color: grey;
   }
 
@@ -51,5 +52,6 @@
     align-items: center;
     justify-content: center;
     color: #6b7280;
+    height: 100%;
   }
 }

@@ -5,6 +5,7 @@
   justify-content: center;
   gap: 12px;
   padding: 4px;
+  height: 100%;
 }
 
 .titleContainer {
@@ -119,16 +120,16 @@
     font-size: 16px;
     font-weight: 600;
     color: #828282;
+    text-transform: uppercase;
   }
 
   .circularProgressContainer {
     width: 150px;
-    /* border: 1px solid red; */
   }
 
   .courseProgress {
     position: absolute;
-    top: 52px;
+    top: 0;
     width: 84%;
     height: 90%;
   }
@@ -149,18 +150,18 @@
 
 @media (min-width: 700px) {
   .circularProgressContainer {
-    width: 262px;
-    height: 295px;
+    width: 169px;
+    height: 169px;
   }
 
   .courseProgress {
     position: absolute;
-    top: 35px;
+    top: 10px;
     width: 88%;
   }
 
   .prototypeProgress {
-    top: 20px;
+    top: 0;
   }
 
   .courseLabel {

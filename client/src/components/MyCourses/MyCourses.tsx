@@ -31,13 +31,6 @@ const MyCourses = () => {
                         <MyPieChart />
                     </div>
                 </div>
-                <div className={styles.courseCard}>
-                    <img src={graduatingCap} alt="Course Icon" className={styles.cardIcon} />
-                    <p>Modern Web tools</p>
-                    <div className={styles.chart}>
-                        <MyPieChart />
-                    </div>
-                </div>
             </div>
         </div>
     );
