@@ -69,15 +69,15 @@
     display: flex;
     justify-content: space-between;
     align-self: stretch;
-    gap: 25px;
+    max-width: 846px;
   }
 
   .card {
     justify-content: space-between;
-    gap: 10px;
-    width: 183px;
     height: 100px;
+    width: 180px;
     align-items: flex-start;
+    padding: 8px 16px;
   }
 
   .cardTitleContainer {

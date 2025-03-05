@@ -1,6 +1,7 @@
 .event {
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding: 8px;
   gap: 10px;
 }
@@ -8,6 +9,7 @@
 .event h3 {
   color: #828282;
   font-size: 16px;
+  align-self: flex-start;
 }
 
 .eventCard {
@@ -15,7 +17,6 @@
   align-items: center;
   padding: 10px;
   height: 116px;
-  max-width: 382px;
   flex-shrink: 0;
   background: #fff;
   border-radius: 8px;
@@ -61,4 +62,10 @@
 .liveIcon p {
   color: #f31a1a;
   font-size: 16px;
+}
+
+@media (min-width: 600px) {
+  .eventCard {
+    width: 382px;
+  }
 }
