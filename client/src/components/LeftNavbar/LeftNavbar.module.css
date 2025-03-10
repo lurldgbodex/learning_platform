@@ -1,0 +1,102 @@
+.navbar {
+  width: 126px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--white-color);
+  background: var(--primary-color);
+  height: 100%;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.navIcon {
+  width: 28px;
+  height: 28px;
+  object-fit: cover;
+  color: #ffffff;
+}
+
+.active {
+  display: flex;
+  width: 78px;
+  height: 70px;
+  padding: 21px 25px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background: var(--Blue-2, #2d9cdb);
+}
+
+.dashboard {
+  gap: 50px;
+  margin-bottom: 50px;
+}
+
+.nav-items {
+  color: var(--white-color);
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.profileCard {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  background: var(--purple-color);
+  margin-bottom: 20px;
+  color: black;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  background: var(--primary-color);
+  color: var(--white-color);
+  border-radius: 8px;
+  width: 346px;
+  list-style: none;
+  padding: 20px;
+}
+
+.dropdown-menu li {
+  padding: 8px 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 1rem;
+}
+
+.nav-prof-container {
+  display: flex;
+  margin-top: 12px;
+}
+
+.nav-prof-icon {
+  width: 40px;
+  height: 40px;
+  background: var(--purple-color);
+  border-radius: 50%;
+  display: flex;
+}
+
+.nav-margin {
+  margin-left: 20px;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    display: none;
+  }
+}

@@ -1,0 +1,77 @@
+.courseContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 0 8px 8px;
+  gap: 8px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 8px;
+}
+
+.header h3 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #828282;
+}
+
+.header p {
+  color: #2f80ed;
+  font-size: 12px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.cardContainer {
+  display: flex;
+  gap: 10px;
+  overflow: scroll;
+}
+.courseCard {
+  min-width: 133px;
+  height: 203px;
+  border-radius: 10px;
+  background: rgba(151, 71, 255, 0.25);
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  gap: 8px;
+}
+
+.cardIcon {
+  width: 28px;
+}
+
+.courseCard p {
+  color: var(--Gray-2, #4f4f4f);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.chart {
+  align-self: center;
+}
+
+@media (min-width: 600px) {
+  .courseContainer {
+    justify-content: space-between;
+  }
+  .header h3 {
+    font-size: 20px;
+    color: #333;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  .cardContainer {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .courseCard {
+    width: 262px;
+  }
+}

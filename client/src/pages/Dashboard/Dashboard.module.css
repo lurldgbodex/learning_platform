@@ -1,0 +1,51 @@
+.mainLayout {
+  display: flex;
+  height: auto;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.mainContent {
+  width: 100%;
+}
+
+.statistics {
+  padding: 8px;
+}
+
+@media (min-width: 600px) {
+  .mainLayout {
+    height: 100%;
+    flex-direction: row;
+  }
+
+  .navbar {
+    align-self: stretch;
+  }
+
+  .statistics {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    height: 295px;
+  }
+
+  .contents {
+    display: flex;
+    width: 100%;
+  }
+
+  .leftContent {
+    flex-grow: 1;
+    padding: 10px;
+  }
+
+  .rightContent {
+    flex-grow: 0;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+  }
+}

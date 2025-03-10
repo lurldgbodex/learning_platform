@@ -1,8 +1,12 @@
 :root {
   --primary-color: #001c27;
+  --sky-blue-color: #2d9cdb;
+  --navy-blue-color: #06455e;
   --error-color: #dc2626;
   --text-color: #1f2937;
-  --white-color: #fff;
+  --white-color: #ffffff;
+  --purple-color: #bb6bd9;
+  --light-grey-color: #e0e0e0;
 }
 
 * {
@@ -12,7 +16,7 @@
 }
 
 body {
-  font-family: Roboto;
+  font-family: 'Manrope', serif;
   color: var(--text-color);
   line-height: 1.6;
 }

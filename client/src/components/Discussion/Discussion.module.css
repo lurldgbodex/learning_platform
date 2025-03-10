@@ -1,0 +1,23 @@
+.discussion {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 10px;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.heading h3 {
+  font-size: 16px;
+  color: #828282;
+  font-weight: 400;
+}
+.heading p {
+  color: #2f80ed;
+  font-size: 12px;
+  cursor: pointer;
+}

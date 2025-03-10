@@ -1,0 +1,12 @@
+.dashboardEvents {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.event {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  border-radius: 10px;
+  width: 25rem;
+}
