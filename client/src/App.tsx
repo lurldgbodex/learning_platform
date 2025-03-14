@@ -4,6 +4,7 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Dashboard from "./pages/Dashboard/Dashboard";
 import { useEffect, useState } from "react";
+import MyCourse from "./pages/MyCourses/MyCourse";
 
 function App() {
   const [accessToken, setAccessToken ] = useState<string | null>(getTokens().accessToken);
@@ -23,6 +24,7 @@ function App() {
         <Route path="/login" element={!accessToken ? <Login /> : <Navigate to="/dashboard" />} />
         <Route path="/register" element={!accessToken ? <Register /> : <Navigate to='/dashboard' />} />
         <Route path="/dashboard" element={accessToken ? <Dashboard /> : <Navigate to='/login' />} />
+        <Route path="/courses" element={accessToken ? <MyCourse /> : <Navigate to ="/login" />} />
         <Route path="/" element={<Navigate to="/dashboard" />} />
       </Routes>
     </Router>
