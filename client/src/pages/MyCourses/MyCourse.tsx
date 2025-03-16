@@ -26,6 +26,7 @@ const MyCourse = () => {
                         <Section 
                             title='My Courses'
                             subTitle='Course Catalog'
+                            route="/catalog"
                             icon={courseIcon}
                         />
                         <CourseCard 
