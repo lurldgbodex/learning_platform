@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 36px;
+  height: 36px;
+}
+
+.container svg {
+  display: block;
+}
+
+.container :global(.CircularProgressbar-text) {
+  font-size: 22px !important;
+  dominant-baseline: central;
+  text-anchor: middle;
+}

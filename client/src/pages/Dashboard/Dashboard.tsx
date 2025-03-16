@@ -6,26 +6,25 @@ import OverviewCards from "../../components/OverviewCards/OverviewCards";
 import ProgressCircles from "../../components/ProgressCircles/ProgressCircles";
 import StudyStatistics from "../../components/StudyStatistics/StudyStatistics";
 import TopHeader from "../../components/TopHeader/TopHeader";
-import styles from "../Dashboard/Dashboard.module.css";
 
 const dashboard = () => {
     return (
-        <div className={styles.mainLayout}>
-            <div className={styles.navbar}>
+        <div className='page-layout'>
+            <div className='navbar'>
                 <LeftNavbar />
             </div>
-            <div className={styles.mainContent}>
+            <div className='content-container'>
                 <TopHeader title='Dashboard' />
-                <div className={styles.contents}>
-                    <div className={styles.leftContent}>
+                <div className='contents'>
+                    <div className='left-container'>
                         <OverviewCards />
-                        <div className={styles.statistics}>
+                        <div className='statistics'>
                             <StudyStatistics />
                             <ProgressCircles />
                         </div>
                         <MyCourses />
                     </div>
-                    <div className={styles.rightContent}>
+                    <div className='right-container'>
                         <Discussion />
                         <LiveEvent />
                     </div>

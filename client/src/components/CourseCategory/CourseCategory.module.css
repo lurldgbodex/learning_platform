@@ -1,0 +1,25 @@
+.category {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.categoryItem {
+  border-radius: 16px;
+  border: 1px solid #bdbdbd;
+  font-size: 14px;
+  letter-spacing: 0.25px;
+  line-height: 20px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-feature-settings:
+    'liga' off,
+    'clig' off;
+}
+
+.active {
+  background: #2d9cdb;
+  border: none;
+  color: #fff;
+}
